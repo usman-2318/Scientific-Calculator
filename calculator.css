@@ -1,0 +1,402 @@
+/* ================================================= */
+/* ================= GLOBAL STYLES ================= */
+/* ================================================= */
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+}
+
+
+body{
+
+   background:black;
+   font-family:Arial, sans-serif;
+
+}
+
+
+
+/* ================================================= */
+/* ================= COMMON BUTTONS ================ */
+/* ================================================= */
+
+button{
+
+   width:75px;
+   height:75px;
+
+   border:none;
+
+   border-radius:20px;
+
+   background:#1e1e1e;
+
+   color:white;
+
+   font-size:25px;
+
+   cursor:pointer;
+
+   transition:0.3s;
+
+}
+
+
+button:hover{
+
+   transform:scale(1.05);
+
+   opacity:0.9;
+
+}
+
+
+.operator{
+
+   background:#00d1b2;
+
+}
+
+
+.zero{
+
+   width:162px;
+
+}
+
+
+
+/* ================================================= */
+/* ================= ROW STYLING =================== */
+/* ================================================= */
+
+.row{
+
+   display:flex;
+
+   justify-content:center;
+
+   gap:15px;
+
+   margin-bottom:20px;
+
+}
+
+
+
+.sci-row{
+
+   display:flex;
+
+   gap:15px;
+
+   margin-bottom:20px;
+
+}
+
+
+
+/* ================================================= */
+/* =============== ACTIVITY 1 ====================== */
+/* ============ BASIC CALCULATOR =================== */
+/* ================================================= */
+
+.calculator{
+
+   width:350px;
+
+   padding:20px;
+
+   background:#111;
+
+   border-radius:25px;
+
+   box-shadow:0 0 20px rgba(255,255,255,0.1);
+
+   margin:20px auto;
+
+}
+
+
+.display input{
+
+   width:100%;
+   height:100px;
+   background:#222;
+   border:none;
+   outline:none;
+   color:white;
+   font-size:40px;
+   text-align:right;
+   border-radius:20px;
+   margin-bottom:25px;
+   padding-right:15px;
+}
+
+
+#openScientific{
+   width:100%;
+   height:75px;
+   margin-top:15px;
+   background:#1e1e1e;
+   color:white;
+   font-size:28px;
+}
+
+
+
+/* ================================================= */
+/* =============== ACTIVITY 2 ====================== */
+/* ========= SCIENTIFIC CALCULATOR ================= */
+/* ================================================= */
+
+.scientific-screen{
+
+   display:none;
+
+   position:fixed;
+
+   top:0;
+
+   left:0;
+
+   width:100%;
+
+   height:100vh;
+
+   background:#111;
+
+   overflow:auto;
+
+   padding:30px;
+
+}
+
+
+.scientific-display{
+
+   display:flex;
+
+   justify-content:center;
+
+   margin-bottom:40px;
+
+}
+
+
+.scientific-display input{
+
+   width:700px;
+
+   height:110px;
+
+   background:#222;
+
+   border:none;
+
+   outline:none;
+
+   color:white;
+
+   font-size:40px;
+
+   text-align:right;
+
+   border-radius:20px;
+
+   padding-right:20px;
+
+}
+
+
+.scientific-layout{
+
+   display:flex;
+
+   justify-content:center;
+
+   align-items:flex-start;
+
+   gap:50px;
+
+}
+
+
+.scientific-functions{
+
+   display:flex;
+
+   flex-direction:column;
+
+}
+
+
+.normal-buttons{
+
+   display:flex;
+
+   flex-direction:column;
+
+}
+
+
+#backToBasic{
+
+   background:#00d1b2;
+   
+    width: 150px;
+
+
+}
+
+
+
+/* ================================================= */
+/* =============== ACTIVITY 3 ====================== */
+/* ============ INVERSE CALCULATOR ================= */
+/* ================================================= */
+
+.inverse-screen{
+
+   display:none;
+
+   position:fixed;
+
+   top:0;
+
+   left:0;
+
+   width:100%;
+
+   height:100vh;
+
+   background:#111;
+
+   overflow:auto;
+
+   padding:30px;
+
+}
+
+
+
+/* ================= DISPLAY ================= */
+
+.inverse-display{
+
+   display:flex;
+
+   justify-content:center;
+
+   margin-bottom:50px;
+
+}
+
+
+.inverse-display input{
+
+   width:700px;
+
+   height:110px;
+
+   background:#222;
+
+   border:none;
+
+   outline:none;
+
+   color:white;
+
+   font-size:40px;
+
+   text-align:right;
+
+   border-radius:20px;
+
+   padding-right:20px;
+
+}
+
+
+
+
+/* ================= MAIN LAYOUT ================= */
+
+.inverse-layout{
+
+   display:flex;
+
+   justify-content:center;
+
+   align-items:flex-start;
+
+   gap:70px;
+
+}
+
+
+
+
+/* ================= LEFT SIDE ================= */
+
+.inverse-functions{
+
+   display:flex;
+
+   flex-direction:column;
+
+}
+
+
+ 
+/* ================= RIGHT SIDE ================= */
+
+.inverse-normal{
+
+   display:flex;
+
+   flex-direction:column;
+
+}
+
+
+
+
+/* ================= TOP BUTTONS ================= */
+
+.top-buttons{
+
+   justify-content:center;
+
+   margin-bottom:30px;
+
+}
+
+
+
+
+/* ================= BUTTON WIDTH ================= */
+
+#openInverse{
+
+   width:180px;
+
+}
+
+
+#backToScientific{
+
+   width:130px;
+
+   background:#00d1b2;
+
+}
+
+
+#backToBasicFromInverse{
+
+   width:105px;
+
+}
